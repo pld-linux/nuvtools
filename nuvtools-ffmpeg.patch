@@ -1,0 +1,10 @@
+--- ./Makefile~	2005-11-22 22:19:05.000000000 +0200
++++ ./Makefile	2005-11-22 22:53:48.000000000 +0200
+@@ -1,6 +1,6 @@
+ TOPDIR = .
+ 
+-LIBSUBDIRS = libnuvread libnuvtools ffmpeg librtjpeg libminilzo
++LIBSUBDIRS = libnuvread libnuvtools librtjpeg libminilzo
+ SUBDIRS = nuvscan nuv2avi
+ .PHONY:	${SUBDIRS} ${LIBSUBDIRS} FORCE
+ 

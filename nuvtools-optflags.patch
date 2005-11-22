@@ -1,0 +1,20 @@
+--- ./nuvscan/Makefile~	2005-11-22 22:19:05.000000000 +0200
++++ ./nuvscan/Makefile	2005-11-22 23:04:11.000000000 +0200
+@@ -1,5 +1,6 @@
+ CC=gcc
+-CFLAGS=-O6 -g -I${TOPDIR}/libnuvread -I${TOPDIR}
++OPTFLAGS=-O6 -g
++CFLAGS=$(OPTFLAGS) -I${TOPDIR}/libnuvread -I${TOPDIR}
+ LDFLAGS=-L${TOPDIR}/libnuvread -lnuvread -lm
+ BINDIR=/usr/local/bin
+ OBJS=nuvscan.o
+--- ./nuv2avi/Makefile~	2005-11-22 22:19:05.000000000 +0200
++++ ./nuv2avi/Makefile	2005-11-22 23:05:10.000000000 +0200
+@@ -1,5 +1,6 @@
+ CC        = gcc
+-CFLAGS    = -O6 -g ${INCLUDES} -pthread
++OPTFLAGS  = -O6 -g -pthread
++CFLAGS    = $(OPTFLAGS) ${INCLUDES}
+ INCLUDES  = -I${TOPDIR}/ffmpeg/libavformat -I${TOPDIR}/ffmpeg/libavcodec 
+ INCLUDES += -I${TOPDIR}/libnuvtools
+ INCLUDES += -I${TOPDIR}/libnuvread -I${TOPDIR}/librtjpeg/RTjpeg
