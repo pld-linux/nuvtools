@@ -4,7 +4,8 @@
 # Conditional build:
 %bcond_with	system_ffmpeg	# use system ffmpeg (bundled one doesn't compile under amd64)
 #
-Summary:	MythTV nuv video file conversion script
+Summary:	MythTV NUV video file conversion script
+Summary(pl):	Skrypty do konwersji obrazu NUV dla MythTV
 Name:		nuvtools
 Version:	0.0.3
 %define	_snap 20051122
@@ -32,6 +33,13 @@ nuvtools includes:
 - nuvscan - shows the contents of every frame in the NUV file (very
   verbose)
 - nuv2avi - converts NUV files to AVI with minimal recoding
+
+%description -l pl
+Pakiet nuvtools zawiera programy:
+- nuvscan - pokazuj±cy zawarto¶æ ka¿dej klatki w pliku NUV (bardzo
+  szczegó³owo),
+- nuv2avi - konwertuj±cy pliki NUV do AVI z minimalnym
+  przekodowywaniem.
 
 %prep
 %setup -q %{?_snap:-n %{name}}
@@ -74,6 +82,7 @@ cd ..
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install
 
 %clean
