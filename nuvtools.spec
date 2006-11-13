@@ -50,7 +50,7 @@ rm -rf ffmpeg
 %endif
 
 %build
-%if %{without system_ffmpeg}
+%if !%{with system_ffmpeg}
 cd ffmpeg
 %configure \
 	--enable-pthreads \
