@@ -5,7 +5,7 @@
 %bcond_with	system_ffmpeg	# use system ffmpeg (bundled one doesn't compile under amd64)
 #
 Summary:	MythTV NUV video file conversion script
-Summary(pl):	Skrypty do konwersji obrazu NUV dla MythTV
+Summary(pl.UTF-8):   Skrypty do konwersji obrazu NUV dla MythTV
 Name:		nuvtools
 Version:	0.0.3
 %define	_snap 20051122
@@ -34,11 +34,11 @@ nuvtools includes:
   verbose)
 - nuv2avi - converts NUV files to AVI with minimal recoding
 
-%description -l pl
+%description -l pl.UTF-8
 Pakiet nuvtools zawiera programy:
-- nuvscan - pokazuj±cy zawarto¶æ ka¿dej klatki w pliku NUV (bardzo
-  szczegó³owo),
-- nuv2avi - konwertuj±cy pliki NUV do AVI z minimalnym
+- nuvscan - pokazujÄ…cy zawartoÅ›Ä‡ kaÅ¼dej klatki w pliku NUV (bardzo
+  szczegÃ³Å‚owo),
+- nuv2avi - konwertujÄ…cy pliki NUV do AVI z minimalnym
   przekodowywaniem.
 
 %prep
