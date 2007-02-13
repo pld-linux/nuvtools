@@ -5,7 +5,7 @@
 %bcond_with	system_ffmpeg	# use system ffmpeg (bundled one doesn't compile under amd64)
 #
 Summary:	MythTV NUV video file conversion script
-Summary(pl.UTF-8):   Skrypty do konwersji obrazu NUV dla MythTV
+Summary(pl.UTF-8):	Skrypty do konwersji obrazu NUV dla MythTV
 Name:		nuvtools
 Version:	0.0.3
 %define	_snap 20051122
